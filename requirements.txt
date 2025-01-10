@@ -1,6 +1,6 @@
 fastapi 
 uvicorn 
-openai 
+openai==0.28 
 langchain 
 beautifulsoup4 
 selenium 
@@ -10,3 +10,5 @@ numpy
 PyPDF2 
 jinja2 
 pytest 
+python-dotenv
+fpdf
