@@ -10,3 +10,5 @@ numpy
 PyPDF2 
 jinja2 
 pytest 
+transformers
+accelerate

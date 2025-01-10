@@ -9,5 +9,7 @@ __pycache__
 # Ignore environment files
 .env
 
+*pkl
+
 # VSCode settings
 .vscode/
