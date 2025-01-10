@@ -12,3 +12,4 @@ jinja2
 pytest 
 python-dotenv
 fpdf
+pytest
