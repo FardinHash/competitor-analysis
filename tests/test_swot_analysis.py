@@ -6,7 +6,7 @@ def test_swot_analysis():
         "wikipedia_summary": "OpenAI is an AI research lab."
     }
     agent = SWOTAnalysisAgent()
-    result = agent.analyze(data, "Tesla")
+    result = agent.analyze(data, "OpenAI")
     assert "Strengths:" in result
     assert "Weaknesses:" in result
     assert "Opportunities:" in result
