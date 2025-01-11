@@ -1,7 +1,7 @@
 import os
 from src.agents.report_generator import ReportGenerator
 
-def test_report_generation_with_llama2():
+def test_report_generation_with_gemma2():
     agent = ReportGenerator()
     swot_results = (
         "Strengths:\n- Innovative AI models.\n- Strong research team.\n\n"

@@ -1,7 +1,7 @@
 from src.orchestrator import Orchestrator
 import asyncio
 
-def test_llama2_end_to_end():
+def test_gemma2_end_to_end():
     orchestrator = Orchestrator()
     query = "OpenAI"
     report_path = asyncio.run(orchestrator.run(query))

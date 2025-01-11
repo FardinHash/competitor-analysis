@@ -1,6 +1,6 @@
 from src.agents.swot_analysis import SWOTAnalysisAgent
 
-def test_llama2_swot_analysis():
+def test_gemma2_swot_analysis():
     agent = SWOTAnalysisAgent()
     input_data = {
         "google_summary": "OpenAI is revolutionizing AI with advanced models.",

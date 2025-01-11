@@ -1,6 +1,6 @@
 from src.utils.normalization import normalize_data
 
-def test_normalization_with_llama2():
+def test_normalization_with_gemma2():
     raw_data = {
         "google": {"google_summary": "Leading AI research organization."},
         "wikipedia": {"wikipedia_summary": "OpenAI specializes in AI and machine learning."},

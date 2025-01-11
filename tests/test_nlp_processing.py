@@ -1,6 +1,6 @@
 from src.agents.nlp_processing import NLPProcessingAgent
 
-def test_nlp_processing_with_llama2():
+def test_nlp_processing_with_gemma2():
     agent = NLPProcessingAgent()
     raw_data = {
         "google_summary": "OpenAI is transforming AI research with innovative models.",
