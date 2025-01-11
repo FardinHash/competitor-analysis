@@ -1,17 +1,28 @@
 # Competitor Analysis
 
-This repository contains a system for analyzing competitors using data from various sources like Google, Wikipedia, and Reddit. It dynamically generates SWOT analyses and PDF reports using advanced AI-driven techniques.
+This repository contains a system for analyzing competitors using data from various sources like Google, Wikipedia, LinkedIn and Reddit. It dynamically generates SWOT analyses and PDF reports using advanced AI-driven techniques.
 
 ## Features
 
 - **Multi-Source Data Integration**:
-  Aggregates data from Google Search, Wikipedia, and Reddit.
+  Aggregates data from Google Search, Wikipedia, LinkedIn and Reddit.
 - **AI-Driven SWOT Analysis**:
   Uses state-of-the-art LLMs (e.g., [Llama-2](https://github.com/FardinHash/competitor-analysis/tree/llama2), [Gemma 2](https://github.com/FardinHash/competitor-analysis/tree/gemma-27b)) to extract insights and generate SWOT analyses.
 - **Automated PDF Reporting**:
   Produces professional reports summarizing the analysis.
 - **Modular Multi-Agent System**:
   Designed for scalability and easy extensibility.
+
+---
+
+## Architecture
+
+The system follows a modular, multi-agent architecture:
+1. **Data Retrieval Agent**: Aggregates data from multiple external sources.
+2. **NLP Processing Agent**: Normalizes and preprocesses raw data for downstream tasks.
+3. **SWOT Analysis Agent**: Uses an LLM to generate Strengths, Weaknesses, Opportunities, and Threats.
+4. **Report Generator**: Creates a polished PDF report for the final analysis.
+5. **Orchestrator**: Manages the workflow between agents.
 
 ---
 
@@ -33,6 +44,17 @@ source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+
+#### 4. Set Up Environment Variables
+Create a `.env` file in the root directory and populate it with the following variables:
+```env
+OPENAI_API_KEY=your-openai-api-key
+CRUNCHBASE_API_KEY=your-crunchbase-api-key
+REDDIT_CLIENT_ID=your-reddit-client-id
+REDDIT_CLIENT_SECRET=your-reddit-client-secret
+REDDIT_USER_AGENT=your-reddit-user-agent
+HUGGINGFACE_HUB_TOKEN=your-huggingface-hub-token
+```
 ---
 
 ## Usage
@@ -50,7 +72,7 @@ python src/main.py
 
 ---
 
-## Test Cases
+## Test Cases (Development)
 
 To ensure the system works as expected, use the following example test cases:
 
