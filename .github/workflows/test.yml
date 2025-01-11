@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - llama2
+      - gemma-27b
   pull_request:
     branches:
       - main
       - llama2
+      - gemma-27b
 
 jobs:
   test:
