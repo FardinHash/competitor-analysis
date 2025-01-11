@@ -1,9 +1,10 @@
+from dotenv import load_dotenv
 import os
-from huggingface_hub import login
 
 def authenticate_hf():
+    load_dotenv()
+
     token = os.getenv("HUGGINGFACE_HUB_TOKEN")
-    if token:
-        login(token)
-    else:
+    if not token:
         raise ValueError("Hugging Face token not found in environment variables.")
+    return token
