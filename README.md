@@ -7,7 +7,7 @@ This repository contains a system for analyzing competitors using data from vari
 - **Multi-Source Data Integration**:
   Aggregates data from Google Search, Wikipedia, and Reddit.
 - **AI-Driven SWOT Analysis**:
-  Uses state-of-the-art LLMs (e.g., [Llama-2](https://github.com/FardinHash/competitor-analysis/tree/llama2)) to extract insights and generate SWOT analyses.
+  Uses state-of-the-art LLMs (e.g., [Llama-2](https://github.com/FardinHash/competitor-analysis/tree/llama2), [Gemma 2](https://github.com/FardinHash/competitor-analysis/tree/gemma-27b)) to extract insights and generate SWOT analyses.
 - **Automated PDF Reporting**:
   Produces professional reports summarizing the analysis.
 - **Modular Multi-Agent System**:
