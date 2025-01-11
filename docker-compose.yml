@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    container_name: competitor_analysis
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - CRUNCHBASE_API_KEY=${CRUNCHBASE_API_KEY}
+      - REDDIT_CLIENT_ID=${REDDIT_CLIENT_ID}
+      - REDDIT_CLIENT_SECRET=${REDDIT_CLIENT_SECRET}
+      - REDDIT_USER_AGENT=${REDDIT_USER_AGENT}
+      - HUGGINGFACE_HUB_TOKEN=${HUGGINGFACE_HUB_TOKEN}
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
