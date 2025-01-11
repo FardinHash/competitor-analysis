@@ -19,7 +19,7 @@ This repository contains a system for analyzing competitors using data from vari
 
 ### 1. Clone the Repository
 ```bash
-git clone git@github.com:<YourUsername>/competitor-analysis.git
+git clone git@github.com:FardinHash/competitor-analysis.git
 cd competitor-analysis
 ```
 
