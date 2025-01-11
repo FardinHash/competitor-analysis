@@ -1,4 +1,4 @@
-from agents.data_retrieval import GoogleSearchAgent, WikipediaAgent
+from agents.data_retrieval import GoogleSearchAgent, WikipediaAgent, LinkedInSearchAgent
 from utils.normalization import normalize_data
 from agents.nlp_processing import NLPProcessingAgent
 from agents.swot_analysis import SWOTAnalysisAgent
@@ -8,6 +8,7 @@ class Orchestrator:
     def __init__(self):
         self.google_agent = GoogleSearchAgent()
         self.wikipedia_agent = WikipediaAgent()
+        self.linkedin_agent = LinkedInSearchAgent() 
         self.nlp_agent = NLPProcessingAgent()
         self.swot_agent = SWOTAnalysisAgent()
         self.report_agent = ReportGenerator()
@@ -16,9 +17,10 @@ class Orchestrator:
         # Step 1: Retrieve data from alternative sources
         google_data = self.google_agent.get_google_data(query)
         wikipedia_data = self.wikipedia_agent.get_wikipedia_data(query)
+        linkedin_data = self.linkedin_agent.get_linkedin_data(query)
 
         # Step 2: Normalize data
-        raw_data = {"google": google_data, "wikipedia": wikipedia_data}
+        raw_data = {"google": google_data, "wikipedia": wikipedia_data, "linkedin": linkedin_data,}
         normalized_data = normalize_data(raw_data)
 
         # Step 3: Process data
