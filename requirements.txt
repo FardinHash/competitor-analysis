@@ -13,3 +13,4 @@ pytest
 transformers
 accelerate
 python-dotenv
+fpdf
